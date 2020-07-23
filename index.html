@@ -6,24 +6,32 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Survey Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
   </head>
   <body>
     <h1 id="title"> Survey Page</h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
-    <p id="description"></p>
+    <p id="description">This is a survey to gather data. </p>
     <form id="survey-form">
       <!-- start of survey -->
-      <fieldset class="form-group">
+      <fieldset class="name" id="name">
+        <label for="exampleInputName">Name</label>
+        <input type="text" placeholder=" Bob Smith">
+      </fieldset>
+      <!-- email input -->
+      <fieldset class="form-group" id="email">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
         <small class="text-muted">We'll never share your email with anyone else.</small>
       </fieldset>
+      <!-- end email input start password input  -->
       <fieldset class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </fieldset>
+      <!-- end password input  -->
       <fieldset class="form-group">
         <label for="exampleSelect1">Example select</label>
         <select class="form-control" id="exampleSelect1">
@@ -79,6 +87,6 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <!-- end of survey -->
-    
+
   </body>
 </html>
