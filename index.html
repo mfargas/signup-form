@@ -17,13 +17,13 @@
     <form id="survey-form">
       <!-- start of survey -->
       <fieldset class="name" id="name">
-        <label for="exampleInputName">Name</label>
+        <label for="name-label">Name</label>
         <input type="text" placeholder=" Bob Smith">
       </fieldset>
       <!-- email input -->
       <fieldset class="form-group" id="email">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        <input type="email" class="form-control" id="email-label" placeholder="Enter email">
         <small class="text-muted">We'll never share your email with anyone else.</small>
       </fieldset>
       <!-- end email input start password input  -->
@@ -34,7 +34,7 @@
       <!-- end password input  -->
       <fieldset class="form-group">
         <label for="exampleSelect1">Example select</label>
-        <select class="form-control" id="exampleSelect1">
+        <select class="form-control" id="dropdown">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -51,10 +51,6 @@
           <option>4</option>
           <option>5</option>
         </select>
-      </fieldset>
-      <fieldset class="form-group">
-        <label for="exampleTextarea">Example textarea</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
       </fieldset>
       <fieldset class="form-group">
         <label for="exampleInputFile">File input</label>
@@ -81,10 +77,17 @@
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> Check me out
+          <input type="checkbox"> Check
+        </label>
+        <label>
+          <input type="checkbox"> me
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <fieldset class="form-group">
+        <label for="exampleTextarea">Example textarea</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </fieldset>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
     <!-- end of survey -->
 
