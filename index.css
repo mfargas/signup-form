@@ -1,1 +1,60 @@
+body{
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: rgb(34, 17, 28);
+}
 
+#survey-form{
+  background-color: white;
+  color: rgb(34, 17, 28);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  padding: 1em;
+}
+
+#title{
+  margin: 0.5em;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+#description{
+  margin: 1em;
+  font-style: italic;
+}
+
+.dropdown{
+  color: grey;
+  background-color: black;
+}
+
+#checkbox{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  padding: 10px;
+}
+
+#optionsCheckbox1,
+#optionsCheckbox2,
+#optionsCheckbox3 {
+  padding: 50px;
+}
+
+.radio{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+}
+
+#textarea{
+  width: 75%;
+}
+
+#submit{
+  background-color: rgb(34, 17, 28);
+  border-color: black;
+}
+
+#submit:hover{
+  background-color: black;
+}
