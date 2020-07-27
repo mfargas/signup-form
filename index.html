@@ -9,87 +9,99 @@
     <link rel="stylesheet" href="index.css" type="text/css">
   </head>
   <body>
-    <h1 id="title"> Survey Page</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-
-    <p id="description">This is a survey to gather data. </p>
+    <h1 id="title">Survey Project</h1>
+    <p id="description">This is a form with common form elements often used in sign-up pages and feedback/survey pages.</p>
     <form id="survey-form">
       <!-- start of survey -->
-      <fieldset class="name" id="name">
-        <label for="name-label">Name</label>
-        <input type="text" placeholder=" Bob Smith">
+      <fieldset class="form-group">
+        <label for="name-label" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="First and Last" required>
       </fieldset>
       <!-- email input -->
-      <fieldset class="form-group" id="email">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="email-label" placeholder="Enter email">
-        <small class="text-muted">We'll never share your email with anyone else.</small>
-      </fieldset>
-      <!-- end email input start password input  -->
       <fieldset class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="email-label" id="email-label">Email address</label>
+        <input type="email" name="email" id="email" placeholder="email@email.com" required>
+        <small class="text-muted">Your privacy is ensured.</small>
+      </fieldset>
+      <!-- end email input
+      start password input  -->
+      <fieldset class="form-group">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
       </fieldset>
       <!-- end password input  -->
+      <!-- start phone number input -->
       <fieldset class="form-group">
-        <label for="exampleSelect1">Example select</label>
+        <label for="tel" id="tel-label">Phone Number</label>
+        <input type="tel" id="tel" name="number" value="" placeholder="XXX-XXX-XXXX" required>
+      </fieldset>
+      <!-- end phone number input  -->
+      <!-- start years in field input -->
+      <fieldset>
+        <label for="number" id="number-label">Years studying/working in your profession.</label>
+        <input id="number" type="number" name="age" placeholder="1" min="0" max="45" size="1" required>
+      </fieldset>
+      <!-- end age input-->
+      <!-- start drop down menu  -->
+      <fieldset class="form-group">
+        <label for="exampleSelect1">You heard about us through:</label>
         <select class="form-control" id="dropdown">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>Social Media</option>
+          <option>Commercial</option>
+          <option>Referral</option>
+          <option>Job Fair</option>
+          <option>Other</option>
         </select>
       </fieldset>
-      <fieldset class="form-group">
-        <label for="exampleSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </fieldset>
-      <fieldset class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" class="form-control-file" id="exampleInputFile">
-        <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-      </fieldset>
+      <!-- end drop down  -->
+      <!-- start checkbox -->
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">Newsletter
+        </label>
+        <label>
+          <input type="checkbox">Promotions
+        </label>
+      </div>
+      <!-- end checkbox -->
+      <!-- start radios -->
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-          Option one is this and that&mdash;be sure to include why it's great
+          Receive notifications via text and email.
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Option two can be something else and selecting it will deselect option one
+          Email notifications only.
         </label>
       </div>
-      <div class="radio disabled">
+      <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-          Option three is disabled
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          Text notifications only.
         </label>
       </div>
-      <div class="checkbox">
+      <div class="radio">
         <label>
-          <input type="checkbox"> Check
-        </label>
-        <label>
-          <input type="checkbox"> me
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          Opt out of notications entirely.
         </label>
       </div>
+      <!-- end radios  -->
+      <!-- start textarea -->
       <fieldset class="form-group">
-        <label for="exampleTextarea">Example textarea</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label for="Textarea">Feedback:</label>
+        <textarea class="form-control" id="Textarea" rows="3"></textarea>
       </fieldset>
+      <!-- end textarea -->
             <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
     <!-- end of survey -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
   </body>
 </html>
