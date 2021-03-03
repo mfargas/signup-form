@@ -5,42 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Survey Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="index.css" type="text/css">
   </head>
   <body>
     <hr>
-    <form class="row g-3" id="survey-form">
-      <br>
-
+<div class="container-fluid">
+<form class="row g-3" id="survey-form">
 <!-- create carousel sign-up form -->
 
-
-<div class="container-fluid">
-  <div class="form-title">
-    <h1 id="title">Create Account </h1>
-    <p id="description"> sign up now for exclusive rewards and notifications </p>
+  <div class="row">
+    <div class="form-title">
+      <h1 id="title">Create Account </h1>
+      <p id="description"> sign up now for exclusive rewards and notifications </p>
+    </div>
   </div>
-
   <div class="row">
     <div class="col-md-6">
-      <label for="name" class="form-label">Name</label>
+      <label for="name" class="form-label" id="name-label">Name</label>
       <input type="text" class="form-control" id="name" placeholder="First name" aria-label="First name">
     </div>
     <div class="col-md-6">
-      <label for="lastname" class="form-label" style="opacity: 0%;"> Last</label>
+      <label for="lastname" class="form-label" id="lastname-label" style="opacity: 0%;"> Last</label>
       <input type="text" class="form-control" id="lastname" placeholder="Last name" aria-label="Last name">
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-8">
       <label for="username" class="form-label">Username</label>
       <input type="text" class="form-control" id="username" placeholder="@username">
     </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-md-6">
+        <label for="number" id="number-label">Year of Birth</label>
+        <input id="number" type="number" name="age" placeholder="1990" min="1900" max="2003" size="1" required>
+    </div>
   </div>
 
+  <div>
+    <!-- <fieldset class="form-group"> -->
+      <label for="tel" id="tel-label">Phone Number</label>
+      <input type="tel" id="tel" name="number" placeholder="XXX-XXX-XXXX" required>
+    <!-- </fieldset> -->
+  </div>
+
+<br>
   <div class="row">
     <div class="col-md-6"> 
       <label for="inputEmail4" class="form-label">Email</label>
@@ -50,111 +63,78 @@
 
   <div class="row">
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
+      <div class="checkbox" id="checkbox">
+        <label>
+          <input name="optionsCheckbox" id="optionsCheckbox1" type="checkbox" value="option1" checked>Newsletter
+        </label>
+        <label>
+          <input name="optionsCheckbox" id="optionsCheckbox2" type="checkbox" value="option2">Deals & promotions
+        </label>
+      </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-6">
-      <div class="checkbox" id="checkbox">
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox1" type="checkbox" value="option1" checked>Newsletter
-        </label>
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox2" type="checkbox" value="option2">Job alerts
-        </label>
-      </div>
+  <div class="col-md-6">
+    <label for="dropdown">You heard about us through:</label>
+      <select id="dropdown">
+        <option>Social Media</option>
+        <option>Commercial</option>
+        <option>Referral</option>
+        <option>Job Fair</option>
+        <option>Other</option>
+    </select>
     </div>
   </div>
 
-</div>
+  <br>
 
-
-
-
-
-
-
-
-      <!-- start of survey -->
-
-      <br>
-      <hr>
-      <br>
-      <!-- start years in field input -->
-      <fieldset>
-        <label for="number" id="number-label">Years studying/working in your profession.</label>
-        <input id="number" type="number" name="age" placeholder="1" min="0" max="45" size="1" required>
-      </fieldset>
-      <!-- end age input-->
-      <br>
-      <!-- start drop down menu  -->
-      <fieldset class="form-group">
-        <label for="dropdown">You heard about us through:</label>
-        <select id="dropdown">
-          <option>Social Media</option>
-          <option>Commercial</option>
-          <option>Referral</option>
-          <option>Job Fair</option>
-          <option>Other</option>
-        </select>
-      </fieldset>
-      <!-- end drop down  -->
-      <br>
-      <hr>
-      <!-- start checkbox -->
-      <div class="checkbox" id="checkbox">
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox1" type="checkbox" value="option1" checked>Newsletter
-        </label>
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox2" type="checkbox" value="option2">Job alerts
-        </label>
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox3" type="checkbox" value="option3">Promotions
-        </label>
-      </div>
-      <!-- end checkbox -->
-      <!-- start radios -->
+  <div class="row">
+    <div class="col-md-6">
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-          Receive notifications via text and email.
+                Receive notifications via text and email.
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Email notifications only.
+                Email notifications only.
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          Text notifications only.
+                Text notifications only.
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-          Opt out of notications entirely.
+                Opt out of notifications entirely.
         </label>
       </div>
-      <!-- end radios  -->
-      <!-- start textarea -->
-      <fieldset class="form-group">
+    </div>
+  </div>
+
+  <br>
+
+    <div class="row">
+      <div class="col-md-6">
         <label for="textarea">Feedback:</label>
         <br>
         <textarea id="textarea" rows="5"></textarea>
-      </fieldset>
-      <!-- end textarea -->
-            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-    
-          </form>
+      </div>
+    </div>
+
+  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
     <!-- end of survey -->
 
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
