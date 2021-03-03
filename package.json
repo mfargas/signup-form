@@ -20,6 +20,8 @@
   "homepage": "https://github.com/mfargas/signup-form#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
   }
-  
 }
