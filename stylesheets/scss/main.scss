@@ -1,6 +1,24 @@
-.container-border{
-    border: 3px;
+$font-family: 'Source Sans Pro', sans-serif;
+$background-color: white;
+$primary-color: #fff000;
+
+body{
+  background-color: $background-color;
+  font-family: $font-family;
+  font-weight: 200;
+  color: rgb(34, 17, 28);
+}
+
+.survey-border{
+    border: 15px;
     border-radius: 5px;
-    background-color: azure;
-    
+    background-color: $primary-color;
+}
+
+#survey-form{
+  background-color: $background-color;
+  color: rgb(34, 17, 28);
+  font-family: $font-family;
+  font-weight: 200;
+  padding: 1em;
 }

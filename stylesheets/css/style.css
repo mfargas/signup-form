@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  color: #22111c;
+}
+
+.container-border {
+  border: 15px;
+  border-radius: 5px;
+  background-color: #fff000;
+}
+
+#survey-form {
+  background-color: white;
+  color: #22111c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */
