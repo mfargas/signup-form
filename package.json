@@ -1,0 +1,29 @@
+{
+  "name": "signup-form",
+  "version": "1.0.0",
+  "description": "## HTML5 | Bootstrap 5 | CSS3 | Sass Technologies used for this project are more simplistic to demonstrate fundamentals.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass stylesheets/scss/main.scss stylesheets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfargas/signup-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfargas/signup-form/issues"
+  },
+  "homepage": "https://github.com/mfargas/signup-form#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  }
+}
