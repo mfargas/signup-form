@@ -13,6 +13,8 @@ body{
     border: 15px;
     border-radius: 5px;
     background-color: $primary-color;
+    min-width: 80vw;
+    min-height: 80vh;
 }
 
 #survey-form{
