@@ -11,20 +11,18 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <hr>
-<div class="container-fluid">
-  <div class="survey-border">
-  
-    <form class="row g-3 align-items-center" id="survey-form">
+<div class="container-fluid align-items-center">
+  <div class="col-8 survey-border">
+    <form class="align-items-center" id="survey-form">
 <!-- create carousel sign-up form -->
 
   <div class="row">
     <div class="form-title">
-      <h1 id="title">Create Account </h1>
-      <p id="description"> sign up now for exclusive rewards and notifications </p>
+      <h1 id="title">Create Account</h1>
+      <p id="description"> Sign up now for exclusive rewards and notifications </p>
     </div>
   </div>
-  <div class="row gx-3 gy-2 align-items-center">
+  <div class="row gx-3 gy-2 justify-content-center">
     <div class="col-md-6">
       <label for="name" class="form-label" id="name-label">Name</label>
       <input type="text" class="form-control" id="name" placeholder="First name" aria-label="First name">
@@ -37,17 +35,16 @@
 
   <div class="row">
     <div class="col-md-6">
-        <label for="number" id="number-label"> Birth Year Enter Here: </label>
-        <input id="number" type="number" name="age" placeholder="1990" min="1900" max="2003" size="1" required>
+        <label for="number" class="form-label" id="number-label"> Birth Year Enter Here: </label>
+        <input id="number" class="form-control" type="number" name="age" placeholder="1990" min="1900" max="2003" size="1" required>
     </div>
   </div>
 
-  <div>
-      <label for="tel" id="tel-label">Phone Number</label>
-      <input type="tel" id="tel" name="number" placeholder="XXX-XXX-XXXX" required>
+  <div class="col-4">
+      <label for="tel" id="tel-label" class="form-label">Phone Number</label>
+      <input type="tel" id="tel" name="number" class="form-control" placeholder="XXX-XXX-XXXX" required>
   </div>
 
-<br>
   <div class="row">
     <div class="col-md-6"> 
       <label for="inputEmail4" class="form-label">Email</label>
@@ -58,11 +55,11 @@
   <div class="row">
     <div class="col-md-6">
       <div class="checkbox" id="checkbox">
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox1" type="checkbox" value="option1" checked>Newsletter
+        <label class="form-label">
+          <input name="optionsCheckbox" id="optionsCheckbox1" type="checkbox" value="option1" checked> Deals & Promotions
         </label>
-        <label>
-          <input name="optionsCheckbox" id="optionsCheckbox2" type="checkbox" value="option2">Deals & promotions
+        <label class="form-label">
+          <input name="optionsCheckbox" id="optionsCheckbox2" type="checkbox" value="option2"> Newsletter
         </label>
       </div>
     </div>
@@ -88,25 +85,25 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Receive notifications via text and email.
+                Receive notifications via text and email
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                Email notifications only.
+                Email notifications only
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                Text notifications only.
+                Text notifications only
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                Opt out of notifications entirely.
+                Opt out of notifications
         </label>
       </div>
     </div>
@@ -115,14 +112,14 @@
   <br>
 
     <div class="row">
-      <div class="col-md-6">
-        <label for="textarea">Feedback:</label>
+      <div class="col-8">
+        <label for="textarea" class="form-label">Feedback:</label>
         <br>
-        <textarea id="textarea" rows="5"></textarea>
+        <textarea id="textarea" rows="5" class="form-control"></textarea>
       </div>
     </div>
-
-  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 </div>
